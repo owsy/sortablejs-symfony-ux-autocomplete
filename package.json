@@ -1,11 +1,21 @@
 {
   "dependencies": {
-    "sortablejs": "^1.15.0"
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "core-js": "^3.33.1",
+    "sortablejs": "^1.15.0",
+    "webpack": "^5.89.0"
   },
   "devDependencies": {
     "@hotwired/stimulus": "^3.0.0",
     "@symfony/stimulus-bridge": "^3.2.0",
     "@symfony/ux-autocomplete": "file:vendor/symfony/ux-autocomplete/assets",
-    "tom-select": "^2.2.2"
+    "@symfony/webpack-encore": "^4.5.0",
+    "tom-select": "^2.2.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-notifier": "^1.15.0"
+  },
+  "scripts": {
+    "watch": "encore dev --watch"
   }
 }
