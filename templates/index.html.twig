@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>SortableJS/AutocompleteUX Demo</h1>
+
+    <ul data-controller="sortable">
+        <li>
+            <span>One</span>
+            <select
+                data-controller="symfony--ux-autocomplete--autocomplete"
+                data-symfony--ux-autocomplete--autocomplete-max-results-value="10"
+                data-symfony--ux-autocomplete--autocomplete-no-results-found-text-value="No results found"
+                data-symfony--ux-autocomplete--autocomplete-no-more-results-text-value="No more results"
+                data-symfony--ux-autocomplete--autocomplete-preload-value="focus"
+                >
+                <option value=""></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+            </select>
+        </li>
+
+        <li>
+            <span>Two</span>
+            <select
+                data-controller="symfony--ux-autocomplete--autocomplete"
+                data-symfony--ux-autocomplete--autocomplete-max-results-value="10"
+                data-symfony--ux-autocomplete--autocomplete-no-results-found-text-value="No results found"
+                data-symfony--ux-autocomplete--autocomplete-no-more-results-text-value="No more results"
+                data-symfony--ux-autocomplete--autocomplete-preload-value="focus"
+                >
+                <option value=""></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+            </select>
+        </li>
+
+        <li>
+            <span>Three</span>
+            <select
+                data-controller="symfony--ux-autocomplete--autocomplete"
+                data-symfony--ux-autocomplete--autocomplete-max-results-value="10"
+                data-symfony--ux-autocomplete--autocomplete-no-results-found-text-value="No results found"
+                data-symfony--ux-autocomplete--autocomplete-no-more-results-text-value="No more results"
+                data-symfony--ux-autocomplete--autocomplete-preload-value="focus"
+                >
+                <option value=""></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+            </select>
+        </li>
+    </ul>
+{% endblock %}
